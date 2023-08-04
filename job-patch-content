@@ -1,0 +1,109 @@
+{
+    "requestId": 10,
+    "queueTime": "2023-07-28T11:31:41.4266667Z",
+    "assignTime": "2023-07-28T11:32:18.7Z",
+    "receiveTime": "2023-07-28T11:33:06.451472Z",
+    "lockedUntil": "2023-07-28T11:43:06.4433333Z",
+    "serviceOwner": "0000005a-0000-8888-8000-000000000000",
+    "hostId": "413cc332-9910-417c-b5fe-76907c1f3c94",
+    "planType": "Actions",
+    "planId": "4eba0c5e-1eb1-432e-8308-cabcab98be08",
+    "jobId": "3bfe43dc-b900-50f7-df5c-1a9bb61d2292",
+    "reservedAgent": {
+        "id": 27,
+        "runnerGroupId": 1,
+        "name": "OSS-ENGINEERING-2",
+        "runnerGroupName": "Default",
+        "version": "2.306.0",
+        "osDescription": "Microsoft Windows 10.0.17763",
+        "enabled": true,
+        "ephemeral": false,
+        "status": "online",
+        "isVirtual": false,
+        "isElastic": false,
+        "disableUpdate": false,
+        "owningTenant": null,
+        "provisioningState": "Provisioned",
+        "lastIdleOn": "2023-07-28T11:32:18.68Z"
+    },
+    "definition": {
+        "_links": {},
+        "id": 3,
+        "name": "test-action"
+    },
+    "owner": {
+        "_links": {},
+        "id": 3,
+        "name": "zhanxiaobo"
+    },
+    "data": {
+        "IsScheduledKey": "False",
+        "event_name": "push",
+        "run_id": "5691460153",
+        "JobDisplayName": "check-bats-version",
+        "OrganizationActionsTenantId": "b0fe465b-f6bd-44a0-8b92-94e7af33ed29",
+        "OrganizationGitHubGlobalId": "U_kgDOA8rdlQ",
+        "OrganizationGitHubName": "zhanxiaobo",
+        "id": "U_kgDOA8rdlQ",
+        "planSku": "free",
+        "type": "User",
+        "RepositoryActionsTenantId": "413cc332-9910-417c-b5fe-76907c1f3c94",
+        "RepositoryGitHubGlobalId": "R_kgDOJ1E9yA",
+        "RepositoryGitHubName": "zhanxiaobo/test-action",
+        "repositoryId": "R_kgDOJ1E9yA",
+        "privateRepository": "False",
+        "repository": "zhanxiaobo/test-action",
+        "forkedRepository": "False",
+        "ownerCreatedAt": "2020-04-14T02:59:04Z",
+        "parentRepositoryOwner": null,
+        "parentRepositoryName": null,
+        "repositoryTier": "2",
+        "forkedPullRequest": "False",
+        "JobWorkflowRef": "zhanxiaobo/test-action/.github/workflows/main.yml@refs/heads/main"
+    },
+    "agentDelays": [],
+    "orchestrationId": "4eba0c5e-1eb1-432e-8308-cabcab98be08.check-bats-version.__default",
+    "labels": [
+        "self-hosted"
+    ],
+    "gitHubEventInfo": {
+        "abuseInfo": {
+            "workflowExecutionId": "4eba0c5e-1eb1-432e-8308-cabcab98be08",
+            "workflowFilePath": ".github/workflows/main.yml",
+            "targetRepositoryTier": 2,
+            "triggerEvent": "push",
+            "triggerEventAction": "",
+            "actor": {
+                "id": "U_kgDOA8rdlQ",
+                "name": "zhanxiaobo",
+                "type": "User",
+                "plan": "free",
+                "createdAt": "2020-04-14T02:59:04Z",
+                "isHammy": false
+            },
+            "targetRepoOwner": {
+                "id": "U_kgDOA8rdlQ",
+                "name": "zhanxiaobo",
+                "type": "User",
+                "plan": "free",
+                "createdAt": "2020-04-14T02:59:04Z",
+                "isHammy": false
+            },
+            "billingPlanOwner": {
+                "id": "U_kgDOA8rdlQ",
+                "name": "zhanxiaobo",
+                "type": "User",
+                "plan": "free",
+                "createdAt": "2020-04-14T02:59:04Z",
+                "isHammy": false
+            },
+            "targetRepository": {
+                "id": "R_kgDOJ1E9yA",
+                "private": false,
+                "nwo": "zhanxiaobo/test-action",
+                "createdAt": "2023-06-28T08:41:02Z"
+            }
+        },
+        "customerLabel": ""
+    }
+}

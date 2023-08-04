@@ -1,0 +1,22 @@
+{
+    "sessionId": "26caf571-2423-4175-99c7-8f6402f08053",
+    "encryptionKey": {
+        "encrypted": true,
+        "value": "S6SdGY8rTNA3aDeFKIP7ySsiBwvLzorH4D8kKPZzb+N6vrvKnQM5tMG30oIHwh5rANhn38Szn1Qey/jxrIMfoLBvsDfkI4yo9QtGt+8Mr2SbL4rDLTNiNc9236Fbj8TZL/vebZr/+Q1DeRHVlchwQw2GpJNIDSHYqh4aDiEtCkd7IRqi0Ky0JkiuRn/vRC8v1yqTevYJHAf/NRtVfHdQoj72klfDoifqVgoMqs4aEka1AfqPsMUFEhiwLHXLwlDZHhaH4SBqCs6cI1zeJ9tvHtozEZlg9CgzIpCNY7/XD06DPulAyvEgKiaLDcf3ueDvvSz26S3PfUKkqIPjXkMFhQ=="
+    },
+    "ownerName": "OSS-ENGINEERING",
+    "agent": {
+        "id": 27,
+        "runnerGroupId": null,
+        "name": "OSS-ENGINEERING-2",
+        "runnerGroupName": null,
+        "version": "2.306.0",
+        "osDescription": "Microsoft Windows 10.0.17763",
+        "ephemeral": null,
+        "status": 0,
+        "isVirtual": false,
+        "owningTenant": null,
+        "provisioningState": null
+    },
+    "useFipsEncryption": true
+}
