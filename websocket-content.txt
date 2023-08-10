@@ -1,0 +1,329 @@
+INFO:     ('127.0.0.1', 60213) - "WebSocket /B87KLIc3vJVXCXx52i1O55bp59v8D2QTZq3AgOfFU6M30VlATW/00000000-0000-0000-0000-000000000000/_apis/distributedtask/hubs/Actions/plans/e0448f70-a62f-493c-a4d7-d69920a25037/timelines/e0448f70-a62f-493c-a4d7-d69920a25037/records/3bfe43dc-b900-50f7-df5c-1a9bb61d2292/feedstream?api-version=6.0-preview" [accepted]
+INFO:     connection open
+{
+  "value": [
+    "Current runner version: '2.307.0'",
+    "Runner name: 'OSS-ENGINEERING-2'",
+    "Runner group name: 'Default'",
+    "Machine name: 'OSS-ENGINEERING'",
+    "##[group]GITHUB_TOKEN Permissions",
+    "Contents: read",
+    "Metadata: read",
+    "Packages: read",
+    "##[endgroup]",
+    "Secret source: Actions",
+    "Prepare workflow directory",
+    "Prepare all required actions",
+    "Getting action download info",
+    "Download action repository 'actions/checkout@v3' (SHA:c85c95e3d7251135ab7dc9ce3241c5835cc595a9)"
+  ],
+  "stepId": "4236a8c6-03b1-445c-a50d-fc74485b0efe",
+  "startLine": 1,
+  "count": 14
+}
+{
+  "value": [
+    "Download action repository 'actions/setup-node@v3' (SHA:e33196f7422957bea03ed53f6fbb155025ffc7b8)"
+  ],
+  "stepId": "4236a8c6-03b1-445c-a50d-fc74485b0efe",
+  "startLine": 15,
+  "count": 1
+}
+{
+  "value": [
+    "Complete job name: check-bats-version"
+  ],
+  "stepId": "4236a8c6-03b1-445c-a50d-fc74485b0efe",
+  "startLine": 16,
+  "count": 1
+}
+{
+  "value": [
+    "##[group]Run actions/checkout@v3",
+    "with:",
+    "  repository: zhanxiaobo/test-action",
+    "  token: ***",
+    "  ssh-strict: true",
+    "  persist-credentials: true",
+    "  clean: true",
+    "  sparse-checkout-cone-mode: true",
+    "  fetch-depth: 1",
+    "  lfs: false",
+    "  submodules: false",
+    "  set-safe-directory: true",
+    "##[endgroup]"
+  ],
+  "stepId": "1ba95ab7-3360-5a16-3c64-6a57cf5e5d86",
+  "startLine": 1,
+  "count": 13
+}
+{
+  "value": [
+    "Syncing repository: zhanxiaobo/test-action",
+    "##[group]Getting Git version info",
+    "Working directory is 'C:\\Users\\Administrator\\Desktop\\action-runner-server\\server-test-1\\runner\\_layout\\_work\\test-action\\test-action'",
+    "[command]\"C:\\Program Files\\Git\\cmd\\git.exe\" version"
+  ],
+  "stepId": "1ba95ab7-3360-5a16-3c64-6a57cf5e5d86",
+  "startLine": 14,
+  "count": 4
+}
+{
+  "value": [
+    "git version 2.37.0.windows.1",
+    "##[endgroup]",
+    "Copying 'C:\\Users\\Administrator\\.gitconfig' to 'C:\\Users\\Administrator\\Desktop\\action-runner-server\\server-test-1\\runner\\_layout\\_work\\_temp\\c250ba3d-8db7-421f-a204-89c1daa76fbd\\.gitconfig'",
+    "Temporarily overriding HOME='C:\\Users\\Administrator\\Desktop\\action-runner-server\\server-test-1\\runner\\_layout\\_work\\_temp\\c250ba3d-8db7-421f-a204-89c1daa76fbd' before making global git config changes",
+    "Adding repository directory to the temporary git global config as a safe directory",
+    "[command]\"C:\\Program Files\\Git\\cmd\\git.exe\" config --global --add safe.directory C:\\Users\\Administrator\\Desktop\\action-runner-server\\server-test-1\\runner\\_layout\\_work\\test-action\\test-action",
+    "Deleting the contents of 'C:\\Users\\Administrator\\Desktop\\action-runner-server\\server-test-1\\runner\\_layout\\_work\\test-action\\test-action'",
+    "##[group]Initializing the repository",
+    "[command]\"C:\\Program Files\\Git\\cmd\\git.exe\" init C:\\Users\\Administrator\\Desktop\\action-runner-server\\server-test-1\\runner\\_layout\\_work\\test-action\\test-action",
+    "Initialized empty Git repository in C:/Users/Administrator/Desktop/action-runner-server/server-test-1/runner/_layout/_work/test-action/test-action/.git/",
+    "[command]\"C:\\Program Files\\Git\\cmd\\git.exe\" remote add origin https://github.com/zhanxiaobo/test-action",
+    "##[endgroup]",
+    "##[group]Disabling automatic garbage collection",
+    "[command]\"C:\\Program Files\\Git\\cmd\\git.exe\" config --local gc.auto 0",
+    "##[endgroup]",
+    "##[group]Setting up auth",
+    "[command]\"C:\\Program Files\\Git\\cmd\\git.exe\" config --local --name-only --get-regexp core\\.sshCommand",
+    "[command]\"C:\\Program Files\\Git\\cmd\\git.exe\" submodule foreach --recursive \"sh -c \\\"git config --local --name-only --get-regexp 'core\\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\\\"\""
+  ],
+  "stepId": "1ba95ab7-3360-5a16-3c64-6a57cf5e5d86",
+  "startLine": 18,
+  "count": 18
+}
+{
+  "value": [
+    "[command]\"C:\\Program Files\\Git\\cmd\\git.exe\" config --local --name-only --get-regexp http\\.https\\:\\/\\/github\\.com\\/\\.extraheader",
+    "[command]\"C:\\Program Files\\Git\\cmd\\git.exe\" submodule foreach --recursive \"sh -c \\\"git config --local --name-only --get-regexp 'http\\.https\\:\\/\\/github\\.com\\/\\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\\\"\""
+  ],
+  "stepId": "1ba95ab7-3360-5a16-3c64-6a57cf5e5d86",
+  "startLine": 36,
+  "count": 2
+}
+{
+  "value": [
+    "[command]\"C:\\Program Files\\Git\\cmd\\git.exe\" config --local http.https://github.com/.extraheader \"AUTHORIZATION: basic ***\"",
+    "##[endgroup]",
+    "##[group]Fetching the repository",
+    "[command]\"C:\\Program Files\\Git\\cmd\\git.exe\" -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +c1f8e1e40312ac8adaa164e03281050484b2fd6f:refs/remotes/origin/main"
+  ],
+  "stepId": "1ba95ab7-3360-5a16-3c64-6a57cf5e5d86",
+  "startLine": 38,
+  "count": 4
+}
+{
+  "value": [
+    "##[error]fatal: unable to access 'https://github.com/zhanxiaobo/test-action/': Failed to connect to github.com port 443 after 21038 ms: Timed out",
+    "The process 'C:\\Program Files\\Git\\cmd\\git.exe' failed with exit code 128",
+    "Waiting 14 seconds before trying again"
+  ],
+  "stepId": "1ba95ab7-3360-5a16-3c64-6a57cf5e5d86",
+  "startLine": 42,
+  "count": 3
+}
+INFO:     connection closed
+INFO:     ('127.0.0.1', 60296) - "WebSocket /B87KLIc3vJVXCXx52i1O55bp59v8D2QTZq3AgOfFU6M30VlATW/00000000-0000-0000-0000-000000000000/_apis/distributedtask/hubs/Actions/plans/e0448f70-a62f-493c-a4d7-d69920a25037/timelines/e0448f70-a62f-493c-a4d7-d69920a25037/records/3bfe43dc-b900-50f7-df5c-1a9bb61d2292/feedstream?api-version=6.0-preview" [accepted]
+INFO:     connection open
+{
+  "value": [
+    "[command]\"C:\\Program Files\\Git\\cmd\\git.exe\" -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +c1f8e1e40312ac8adaa164e03281050484b2fd6f:refs/remotes/origin/main"
+  ],
+  "stepId": "1ba95ab7-3360-5a16-3c64-6a57cf5e5d86",
+  "startLine": 49,
+  "count": 1
+}
+{
+  "value": [
+    "remote: Enumerating objects: 6, done.        ",
+    "remote: Counting objects:  16% (1/6)        ",
+    "remote: Counting objects:  33% (2/6)        ",
+    "remote: Counting objects:  50% (3/6)        ",
+    "remote: Counting objects:  66% (4/6)        ",
+    "remote: Counting objects:  83% (5/6)        ",
+    "remote: Counting objects: 100% (6/6)        ",
+    "remote: Counting objects: 100% (6/6), done.        ",
+    "remote: Compressing objects:  33% (1/3)        ",
+    "remote: Compressing objects:  66% (2/3)        ",
+    "remote: Compressing objects: 100% (3/3)        ",
+    "remote: Compressing objects: 100% (3/3), done.        ",
+    "remote: Total 6 (delta 0), reused 3 (delta 0), pack-reused 0        ",
+    "From https://github.com/zhanxiaobo/test-action",
+    " * [new ref]         c1f8e1e40312ac8adaa164e03281050484b2fd6f -> origin/main",
+    "##[endgroup]",
+    "##[group]Determining the checkout info",
+    "##[endgroup]",
+    "##[group]Checking out the ref",
+    "[command]\"C:\\Program Files\\Git\\cmd\\git.exe\" checkout --progress --force -B main refs/remotes/origin/main",
+    "branch 'main' set up to track 'origin/main'.",
+    "Switched to a new branch 'main'",
+    "##[endgroup]",
+    "[command]\"C:\\Program Files\\Git\\cmd\\git.exe\" log -1 --format='%H'",
+    "'c1f8e1e40312ac8adaa164e03281050484b2fd6f'"
+  ],
+  "stepId": "1ba95ab7-3360-5a16-3c64-6a57cf5e5d86",
+  "startLine": 50,
+  "count": 25
+}
+{
+  "value": [
+    "##[group]Run actions/setup-node@v3",
+    "with:",
+    "  node-version: 14",
+    "  always-auth: false",
+    "  check-latest: false",
+    "  token: ***",
+    "##[endgroup]"
+  ],
+  "stepId": "edba62f2-7c45-57dc-12fa-5115e16987fd",
+  "startLine": 1,
+  "count": 7
+}
+{
+  "value": [
+    "Attempting to download 14..."
+  ],
+  "stepId": "edba62f2-7c45-57dc-12fa-5115e16987fd",
+  "startLine": 8,
+  "count": 1
+}
+{
+  "value": [
+    "Acquiring 14.21.3 - x64 from https://github.com/actions/node-versions/releases/download/14.21.3-4202774076/node-14.21.3-win32-x64.7z"
+  ],
+  "stepId": "edba62f2-7c45-57dc-12fa-5115e16987fd",
+  "startLine": 9,
+  "count": 1
+}
+{
+  "value": [
+    "connect ETIMEDOUT 20.205.243.166:443",
+    "Waiting 13 seconds before trying again"
+  ],
+  "stepId": "edba62f2-7c45-57dc-12fa-5115e16987fd",
+  "startLine": 10,
+  "count": 2
+}
+INFO:     connection closed
+INFO:     ('127.0.0.1', 61692) - "WebSocket /B87KLIc3vJVXCXx52i1O55bp59v8D2QTZq3AgOfFU6M30VlATW/00000000-0000-0000-0000-000000000000/_apis/distributedtask/hubs/Actions/plans/e0448f70-a62f-493c-a4d7-d69920a25037/timelines/e0448f70-a62f-493c-a4d7-d69920a25037/records/3bfe43dc-b900-50f7-df5c-1a9bb61d2292/feedstream?api-version=6.0-preview" [accepted]
+INFO:     connection open
+{
+  "value": [
+    "Adding to the cache ..."
+  ],
+  "stepId": "edba62f2-7c45-57dc-12fa-5115e16987fd",
+  "startLine": 13,
+  "count": 1
+}
+{
+  "value": [
+    "##[group]Environment details"
+  ],
+  "stepId": "edba62f2-7c45-57dc-12fa-5115e16987fd",
+  "startLine": 14,
+  "count": 1
+}
+{
+  "value": [
+    "node: v14.21.3",
+    "npm: 6.14.18",
+    "yarn: ",
+    "##[endgroup]"
+  ],
+  "stepId": "edba62f2-7c45-57dc-12fa-5115e16987fd",
+  "startLine": 15,
+  "count": 4
+}
+{
+  "value": [
+    "##[group]Run npm install -g bats",
+    "\u001b[36;1mnpm install -g bats\u001b[0m",
+    "shell: C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.EXE -command \". '{0}'\"",
+    "##[endgroup]"
+  ],
+  "stepId": "8030b0bb-9802-5acc-fffb-7743eaa4e333",
+  "startLine": 1,
+  "count": 4
+}
+{
+  "value": [
+    "C:\\Users\\Administrator\\Desktop\\action-runner-server\\server-test-1\\runner\\_layout\\_work\\_tool\\node\\14.21.3\\x64\\bats -> C:\\Users\\Administrator\\Desktop\\action-runner-server\\server-test-1\\runner\\_layout\\_work\\_tool\\node\\14.21.3\\x64\\node_modules\\bats\\bin\\bats",
+    "+ bats@1.10.0",
+    "added 1 package from 1 contributor in 1.442s"
+  ],
+  "stepId": "8030b0bb-9802-5acc-fffb-7743eaa4e333",
+  "startLine": 5,
+  "count": 3
+}
+{
+  "value": [
+    "##[group]Run bats -v",
+    "\u001b[36;1mbats -v\u001b[0m",
+    "shell: C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.EXE -command \". '{0}'\"",
+    "##[endgroup]"
+  ],
+  "stepId": "21862141-749d-520b-3a73-b6cd7182a72c",
+  "startLine": 1,
+  "count": 4
+}
+{
+  "value": [
+    "& : The term 'bash.exe' is not recognized as the name of a cmdlet, function, script file, or operable program. Check th",
+    "e spelling of the name, or if a path was included, verify that the path is correct and try again.",
+    "At C:\\Users\\Administrator\\Desktop\\action-runner-server\\server-test-1\\runner\\_layout\\_work\\_tool\\node\\14.21.3\\x64\\bats.p",
+    "s1:15 char:5",
+    "+   & \"bash$exe\"  \"$basedir/node_modules/bats/bin/bats\" $args",
+    "+     ~~~~~~~~~~",
+    "    + CategoryInfo          : ObjectNotFound: (bash.exe:String) [], ParentContainsErrorRecordException",
+    "    + FullyQualifiedErrorId : CommandNotFoundException",
+    " ",
+    "##[error]Process completed with exit code 1."
+  ],
+  "stepId": "21862141-749d-520b-3a73-b6cd7182a72c",
+  "startLine": 5,
+  "count": 10
+}
+{
+  "value": [
+    "Post job cleanup.",
+    "[command]\"C:\\Program Files\\Git\\cmd\\git.exe\" version",
+    "git version 2.37.0.windows.1",
+    "Copying 'C:\\Users\\Administrator\\.gitconfig' to 'C:\\Users\\Administrator\\Desktop\\action-runner-server\\server-test-1\\runner\\_layout\\_work\\_temp\\26f74cf9-d088-484f-9b46-998614df7972\\.gitconfig'",
+    "Temporarily overriding HOME='C:\\Users\\Administrator\\Desktop\\action-runner-server\\server-test-1\\runner\\_layout\\_work\\_temp\\26f74cf9-d088-484f-9b46-998614df7972' before making global git config changes",
+    "Adding repository directory to the temporary git global config as a safe directory",
+    "[command]\"C:\\Program Files\\Git\\cmd\\git.exe\" config --global --add safe.directory C:\\Users\\Administrator\\Desktop\\action-runner-server\\server-test-1\\runner\\_layout\\_work\\test-action\\test-action",
+    "[command]\"C:\\Program Files\\Git\\cmd\\git.exe\" config --local --name-only --get-regexp core\\.sshCommand"
+  ],
+  "stepId": "908487e6-e179-4c39-b11b-b4c9ea512263",
+  "startLine": 1,
+  "count": 8
+}
+{
+  "value": [
+    "[command]\"C:\\Program Files\\Git\\cmd\\git.exe\" submodule foreach --recursive \"sh -c \\\"git config --local --name-only --get-regexp 'core\\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\\\"\""
+  ],
+  "stepId": "908487e6-e179-4c39-b11b-b4c9ea512263",
+  "startLine": 9,
+  "count": 1
+}
+{
+  "value": [
+    "[command]\"C:\\Program Files\\Git\\cmd\\git.exe\" config --local --name-only --get-regexp http\\.https\\:\\/\\/github\\.com\\/\\.extraheader",
+    "http.https://github.com/.extraheader",
+    "[command]\"C:\\Program Files\\Git\\cmd\\git.exe\" config --local --unset-all http.https://github.com/.extraheader",
+    "[command]\"C:\\Program Files\\Git\\cmd\\git.exe\" submodule foreach --recursive \"sh -c \\\"git config --local --name-only --get-regexp 'http\\.https\\:\\/\\/github\\.com\\/\\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\\\"\""
+  ],
+  "stepId": "908487e6-e179-4c39-b11b-b4c9ea512263",
+  "startLine": 10,
+  "count": 4
+}
+{
+  "value": [
+    "Cleaning up orphan processes"
+  ],
+  "stepId": "87f726a2-6cfe-4a6e-a76e-f54d378bd46f",
+  "startLine": 1,
+  "count": 1
+}
+INFO:     connection closed
