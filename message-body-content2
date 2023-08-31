@@ -1,0 +1,1956 @@
+ {
+  "environmentVariables": [
+    {
+      "type": 2,
+      "file": 1,
+      "line": 26,
+      "col": 3,
+      "map": [
+        {
+          "key": {
+            "type": 0,
+            "file": 1,
+            "line": 26,
+            "col": 3,
+            "lit": "REGION_ID"
+          },
+          "value": {
+            "type": 0,
+            "file": 1,
+            "line": 26,
+            "col": 14,
+            "lit": "cn-hangzhou"
+          }
+        },
+        {
+          "key": {
+            "type": 0,
+            "file": 1,
+            "line": 27,
+            "col": 3,
+            "lit": "REGISTRY"
+          },
+          "value": {
+            "type": 0,
+            "file": 1,
+            "line": 27,
+            "col": 13,
+            "lit": "registry.cn-hangzhou.aliyuncs.com"
+          }
+        },
+        {
+          "key": {
+            "type": 0,
+            "file": 1,
+            "line": 28,
+            "col": 3,
+            "lit": "NAMESPACE"
+          },
+          "value": {
+            "type": 0,
+            "file": 1,
+            "line": 28,
+            "col": 14,
+            "lit": "namespace"
+          }
+        },
+        {
+          "key": {
+            "type": 0,
+            "file": 1,
+            "line": 29,
+            "col": 3,
+            "lit": "IMAGE"
+          },
+          "value": {
+            "type": 0,
+            "file": 1,
+            "line": 29,
+            "col": 10,
+            "lit": "repo"
+          }
+        },
+        {
+          "key": {
+            "type": 0,
+            "file": 1,
+            "line": 30,
+            "col": 3,
+            "lit": "TAG"
+          },
+          "value": {
+            "type": 3,
+            "file": 1,
+            "line": 30,
+            "col": 8,
+            "expr": "github.sha"
+          }
+        },
+        {
+          "key": {
+            "type": 0,
+            "file": 1,
+            "line": 31,
+            "col": 3,
+            "lit": "ACK_CLUSTER_ID"
+          },
+          "value": {
+            "type": 0,
+            "file": 1,
+            "line": 31,
+            "col": 19,
+            "lit": "clusterID"
+          }
+        },
+        {
+          "key": {
+            "type": 0,
+            "file": 1,
+            "line": 32,
+            "col": 3,
+            "lit": "ACK_DEPLOYMENT_NAME"
+          },
+          "value": {
+            "type": 0,
+            "file": 1,
+            "line": 32,
+            "col": 24,
+            "lit": "nginx-deployment"
+          }
+        },
+        {
+          "key": {
+            "type": 0,
+            "file": 1,
+            "line": 34,
+            "col": 3,
+            "lit": "ACR_EE_REGISTRY"
+          },
+          "value": {
+            "type": 0,
+            "file": 1,
+            "line": 34,
+            "col": 20,
+            "lit": "myregistry.cn-hangzhou.cr.aliyuncs.com"
+          }
+        },
+        {
+          "key": {
+            "type": 0,
+            "file": 1,
+            "line": 35,
+            "col": 3,
+            "lit": "ACR_EE_INSTANCE_ID"
+          },
+          "value": {
+            "type": 0,
+            "file": 1,
+            "line": 35,
+            "col": 23,
+            "lit": "instanceID"
+          }
+        },
+        {
+          "key": {
+            "type": 0,
+            "file": 1,
+            "line": 36,
+            "col": 3,
+            "lit": "ACR_EE_NAMESPACE"
+          },
+          "value": {
+            "type": 0,
+            "file": 1,
+            "line": 36,
+            "col": 21,
+            "lit": "namespace"
+          }
+        },
+        {
+          "key": {
+            "type": 0,
+            "file": 1,
+            "line": 37,
+            "col": 3,
+            "lit": "ACR_EE_IMAGE"
+          },
+          "value": {
+            "type": 0,
+            "file": 1,
+            "line": 37,
+            "col": 17,
+            "lit": "repo"
+          }
+        },
+        {
+          "key": {
+            "type": 0,
+            "file": 1,
+            "line": 38,
+            "col": 3,
+            "lit": "ACR_EE_TAG"
+          },
+          "value": {
+            "type": 3,
+            "file": 1,
+            "line": 38,
+            "col": 15,
+            "expr": "github.sha"
+          }
+        }
+      ]
+    }
+  ],
+  "fileTable": [
+    ".github/workflows/main.yml"
+  ],
+  "mask": [
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    }
+  ],
+  "steps": [
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "actions/checkout",
+        "ref": "v3",
+        "repositoryType": "GitHub",
+        "path": ""
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 49,
+        "col": 13,
+        "lit": "Checkout"
+      },
+      "contextName": "__actions_checkout",
+      "condition": "success()",
+      "id": "a60052d4-79a0-5821-3eeb-84adb9872c5b",
+      "name": "__actions_checkout"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "aliyun/acr-login",
+        "ref": "v1",
+        "repositoryType": "GitHub",
+        "path": ""
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 53,
+        "col": 13,
+        "lit": "Login to ACR with the AccessKey pair"
+      },
+      "contextName": "__aliyun_acr-login",
+      "inputs": {
+        "type": 2,
+        "file": 1,
+        "line": 56,
+        "col": 9,
+        "map": [
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 56,
+              "col": 9,
+              "lit": "region-id"
+            },
+            "value": {
+              "type": 3,
+              "file": 1,
+              "line": 56,
+              "col": 20,
+              "expr": "env.REGION_ID"
+            }
+          },
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 57,
+              "col": 9,
+              "lit": "access-key-id"
+            },
+            "value": {
+              "type": 3,
+              "file": 1,
+              "line": 57,
+              "col": 24,
+              "expr": "secrets.ACCESS_KEY_ID"
+            }
+          },
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 58,
+              "col": 9,
+              "lit": "access-key-secret"
+            },
+            "value": {
+              "type": 3,
+              "file": 1,
+              "line": 58,
+              "col": 28,
+              "expr": "secrets.ACCESS_KEY_SECRET"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "ecab66d7-04f1-5e56-eb18-1f3c292460f9",
+      "name": "__aliyun_acr-login"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 61,
+        "col": 13,
+        "lit": "Build and push image to ACR"
+      },
+      "contextName": "__run",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 62,
+              "col": 12,
+              "lit": "docker build --tag \"$REGISTRY/$NAMESPACE/$IMAGE:$TAG\" .\ndocker push \"$REGISTRY/$NAMESPACE/$IMAGE:$TAG\"\n"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "dd23db01-cff6-57a4-373a-5c8097a97333",
+      "name": "__run"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "aliyun/acr-scan",
+        "ref": "v1",
+        "repositoryType": "GitHub",
+        "path": ""
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 67,
+        "col": 13,
+        "lit": "Scan image in ACR"
+      },
+      "contextName": "__aliyun_acr-scan",
+      "inputs": {
+        "type": 2,
+        "file": 1,
+        "line": 70,
+        "col": 9,
+        "map": [
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 70,
+              "col": 9,
+              "lit": "region-id"
+            },
+            "value": {
+              "type": 3,
+              "file": 1,
+              "line": 70,
+              "col": 20,
+              "expr": "env.REGION_ID"
+            }
+          },
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 71,
+              "col": 9,
+              "lit": "access-key-id"
+            },
+            "value": {
+              "type": 3,
+              "file": 1,
+              "line": 71,
+              "col": 24,
+              "expr": "secrets.ACCESS_KEY_ID"
+            }
+          },
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 72,
+              "col": 9,
+              "lit": "access-key-secret"
+            },
+            "value": {
+              "type": 3,
+              "file": 1,
+              "line": 72,
+              "col": 28,
+              "expr": "secrets.ACCESS_KEY_SECRET"
+            }
+          },
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 73,
+              "col": 9,
+              "lit": "repository"
+            },
+            "value": {
+              "type": 3,
+              "file": 1,
+              "line": 73,
+              "col": 21,
+              "expr": "format('{0}/{1}', env.NAMESPACE, env.IMAGE)"
+            }
+          },
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 74,
+              "col": 9,
+              "lit": "tag"
+            },
+            "value": {
+              "type": 3,
+              "file": 1,
+              "line": 74,
+              "col": 14,
+              "expr": "env.TAG"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "304c7c7b-5c0a-56f6-972a-a9b437126746",
+      "name": "__aliyun_acr-scan"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "actions/checkout",
+        "ref": "v3",
+        "repositoryType": "GitHub",
+        "path": ""
+      },
+      "contextName": "__actions_checkout_2",
+      "condition": "success()",
+      "id": "8c98a2de-2aad-58eb-de5a-b384bee37084",
+      "name": "__actions_checkout_2"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "aliyun/acr-login",
+        "ref": "v1",
+        "repositoryType": "GitHub",
+        "path": ""
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 78,
+        "col": 13,
+        "lit": "Login to ACR EE with the AccessKey pair"
+      },
+      "contextName": "__aliyun_acr-login_2",
+      "inputs": {
+        "type": 2,
+        "file": 1,
+        "line": 81,
+        "col": 9,
+        "map": [
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 81,
+              "col": 9,
+              "lit": "login-server"
+            },
+            "value": {
+              "type": 3,
+              "file": 1,
+              "line": 81,
+              "col": 23,
+              "expr": "format('https://{0}', env.ACR_EE_REGISTRY)"
+            }
+          },
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 82,
+              "col": 9,
+              "lit": "region-id"
+            },
+            "value": {
+              "type": 3,
+              "file": 1,
+              "line": 82,
+              "col": 20,
+              "expr": "env.REGION_ID"
+            }
+          },
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 83,
+              "col": 9,
+              "lit": "access-key-id"
+            },
+            "value": {
+              "type": 3,
+              "file": 1,
+              "line": 83,
+              "col": 24,
+              "expr": "secrets.ACCESS_KEY_ID"
+            }
+          },
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 84,
+              "col": 9,
+              "lit": "access-key-secret"
+            },
+            "value": {
+              "type": 3,
+              "file": 1,
+              "line": 84,
+              "col": 28,
+              "expr": "secrets.ACCESS_KEY_SECRET"
+            }
+          },
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 85,
+              "col": 9,
+              "lit": "instance-id"
+            },
+            "value": {
+              "type": 3,
+              "file": 1,
+              "line": 85,
+              "col": 22,
+              "expr": "env.ACR_EE_INSTANCE_ID"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "38879111-3ab3-50f7-c32e-5b6695db9fd9",
+      "name": "__aliyun_acr-login_2"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 88,
+        "col": 13,
+        "lit": "Build and push image to ACR EE"
+      },
+      "contextName": "__run_2",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 89,
+              "col": 12,
+              "lit": "docker build -t \"$ACR_EE_REGISTRY/$ACR_EE_NAMESPACE/$ACR_EE_IMAGE:$TAG\" .\ndocker push \"$ACR_EE_REGISTRY/$ACR_EE_NAMESPACE/$ACR_EE_IMAGE:$TAG\"\n"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "87b991c0-db8a-593e-4233-d8a37f15e4c9",
+      "name": "__run_2"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "aliyun/acr-scan",
+        "ref": "v1",
+        "repositoryType": "GitHub",
+        "path": ""
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 93,
+        "col": 13,
+        "lit": "Scan image in ACR EE"
+      },
+      "contextName": "__aliyun_acr-scan_2",
+      "inputs": {
+        "type": 2,
+        "file": 1,
+        "line": 96,
+        "col": 9,
+        "map": [
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 96,
+              "col": 9,
+              "lit": "region-id"
+            },
+            "value": {
+              "type": 3,
+              "file": 1,
+              "line": 96,
+              "col": 20,
+              "expr": "env.REGION_ID"
+            }
+          },
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 97,
+              "col": 9,
+              "lit": "access-key-id"
+            },
+            "value": {
+              "type": 3,
+              "file": 1,
+              "line": 97,
+              "col": 24,
+              "expr": "secrets.ACCESS_KEY_ID"
+            }
+          },
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 98,
+              "col": 9,
+              "lit": "access-key-secret"
+            },
+            "value": {
+              "type": 3,
+              "file": 1,
+              "line": 98,
+              "col": 28,
+              "expr": "secrets.ACCESS_KEY_SECRET"
+            }
+          },
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 99,
+              "col": 9,
+              "lit": "instance-id"
+            },
+            "value": {
+              "type": 3,
+              "file": 1,
+              "line": 99,
+              "col": 22,
+              "expr": "env.ACR_EE_INSTANCE_ID"
+            }
+          },
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 100,
+              "col": 9,
+              "lit": "repository"
+            },
+            "value": {
+              "type": 3,
+              "file": 1,
+              "line": 100,
+              "col": 21,
+              "expr": "format('{0}/{1}', env.ACR_EE_NAMESPACE, env.ACR_EE_IMAGE)"
+            }
+          },
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 101,
+              "col": 9,
+              "lit": "tag"
+            },
+            "value": {
+              "type": 3,
+              "file": 1,
+              "line": 101,
+              "col": 14,
+              "expr": "env.ACR_EE_TAG"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "11d489fa-cf99-57e2-dd73-bcf5fb12fc95",
+      "name": "__aliyun_acr-scan_2"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "aliyun/ack-set-context",
+        "ref": "v1",
+        "repositoryType": "GitHub",
+        "path": ""
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 104,
+        "col": 13,
+        "lit": "Set K8s context"
+      },
+      "contextName": "__aliyun_ack-set-context",
+      "inputs": {
+        "type": 2,
+        "file": 1,
+        "line": 107,
+        "col": 9,
+        "map": [
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 107,
+              "col": 9,
+              "lit": "access-key-id"
+            },
+            "value": {
+              "type": 3,
+              "file": 1,
+              "line": 107,
+              "col": 24,
+              "expr": "secrets.ACCESS_KEY_ID"
+            }
+          },
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 108,
+              "col": 9,
+              "lit": "access-key-secret"
+            },
+            "value": {
+              "type": 3,
+              "file": 1,
+              "line": 108,
+              "col": 28,
+              "expr": "secrets.ACCESS_KEY_SECRET"
+            }
+          },
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 109,
+              "col": 9,
+              "lit": "cluster-id"
+            },
+            "value": {
+              "type": 3,
+              "file": 1,
+              "line": 109,
+              "col": 21,
+              "expr": "env.ACK_CLUSTER_ID"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "5299ae79-aa90-5fae-554a-2a4c39f2d69b",
+      "name": "__aliyun_ack-set-context"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 112,
+        "col": 13,
+        "lit": "Set up Kustomize"
+      },
+      "contextName": "__run_3",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 113,
+              "col": 12,
+              "lit": "curl -s \"https://raw.githubusercontent.com/kubernetes-sigs/kustomize/master/hack/install_kustomize.sh\"  | bash /dev/stdin 3.8.6"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "6cb15225-bace-5236-3d64-8b6d88bf381f",
+      "name": "__run_3"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 115,
+        "col": 13,
+        "lit": "Deploy"
+      },
+      "contextName": "__run_4",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 116,
+              "col": 12,
+              "lit": "./kustomize edit set image REGISTRY/NAMESPACE/IMAGE:TAG=$REGISTRY/$NAMESPACE/$IMAGE:$TAG\n./kustomize build . | kubectl apply -f -\nkubectl rollout status deployment/$ACK_DEPLOYMENT_NAME\nkubectl get services -o wide"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "0bd5d730-eae6-5b54-0101-80d8a124934a",
+      "name": "__run_4"
+    }
+  ],
+  "variables": {
+    "system.isScheduled": {
+      "value": "False"
+    },
+    "system.servertype": {
+      "value": "Hosted"
+    },
+    "system.culture": {
+      "value": ""
+    },
+    "system.pipelineStartTime": {
+      "value": "2023-08-31 01:39:56+00:00"
+    },
+    "system.runner.lowdiskspacethreshold": {
+      "value": "100"
+    },
+    "DistributedTask.NewActionMetadata": {
+      "value": "true"
+    },
+    "DistributedTask.EnableCompositeActions": {
+      "value": "true"
+    },
+    "DistributedTask.EnhancedAnnotations": {
+      "value": "true"
+    },
+    "DistributedTask.UploadStepSummary": {
+      "value": "true"
+    },
+    "DistributedTask.ForceGithubJavascriptActionsToNode16": {
+      "value": "true"
+    },
+    "DistributedTask.AddWarningToNode12Action": {
+      "value": "true"
+    },
+    "DistributedTask.LogTemplateErrorsAsDebugMessages": {
+      "value": "true"
+    },
+    "DistributedTask.AllowRunnerContainerHooks": {
+      "value": "true"
+    },
+    "DistributedTask.DeprecateStepOutputCommands": {
+      "value": "true"
+    },
+    "system.teamProjectId": {
+      "value": "00000000-0000-0000-0000-000000000000"
+    },
+    "build.buildId": {
+      "value": "26"
+    },
+    "build.containerId": {
+      "value": "10455650"
+    },
+    "system.workflowFilePath": {
+      "value": ".github/workflows/main.yml"
+    },
+    "system.phaseDisplayName": {
+      "value": "build"
+    },
+    "system.phaseId": {
+      "value": "6884a131-87da-5381-61f3-d7acc3b91d76"
+    },
+    "system.phaseName": {
+      "value": "build"
+    },
+    "system.phaseAttempt": {
+      "value": "1"
+    },
+    "system.jobIdentifier": {
+      "value": "build.__default"
+    },
+    "system.jobAttempt": {
+      "value": "1"
+    },
+    "System.JobPositionInPhase": {
+      "value": "1"
+    },
+    "System.TotalJobsInPhase": {
+      "value": "1"
+    },
+    "system.github.job": {
+      "value": "build"
+    },
+    "system.jobDisplayName": {
+      "value": "build"
+    },
+    "system.jobId": {
+      "value": "ca395085-040a-526b-2ce8-bdc85f692774"
+    },
+    "system.jobName": {
+      "value": "__default"
+    },
+    "system.github.token.permissions": {
+      "value": "{\"Contents\":\"read\",\"Metadata\":\"read\"}"
+    },
+    "system.github.token": {
+      "value": "***",
+      "isSecret": true
+    },
+    "system.runnerEnvironment": {
+      "value": "self-hosted"
+    },
+    "system.github.results_endpoint": {
+      "value": "https://actions-results-receiver-production.githubapp.com"
+    },
+    "system.orchestrationId": {
+      "value": "cf52d5fd-88af-4f7a-87b8-9cfb84eb854c.build.__default"
+    },
+    "system.runnerGroupName": {
+      "value": "Default"
+    }
+  },
+  "messageType": "PipelineAgentJobRequest",
+  "plan": {
+    "scopeIdentifier": "00000000-0000-0000-0000-000000000000",
+    "planType": "Actions",
+    "version": 33,
+    "planId": "cf52d5fd-88af-4f7a-87b8-9cfb84eb854c",
+    "planGroup": "Actions:00000000-0000-0000-0000-000000000000:1",
+    "artifactUri": "vstfs:///Build/Build/26",
+    "artifactLocation": null,
+    "definition": {
+      "_links": {},
+      "id": 3,
+      "name": "test-action"
+    },
+    "owner": {
+      "_links": {},
+      "id": 3,
+      "name": "zhanxiaobo"
+    }
+  },
+  "timeline": {
+    "id": "cf52d5fd-88af-4f7a-87b8-9cfb84eb854c",
+    "changeId": 0,
+    "location": null
+  },
+  "jobId": "ca395085-040a-526b-2ce8-bdc85f692774",
+  "jobDisplayName": "build",
+  "jobName": "__default",
+  "requestId": 26,
+  "lockedUntil": "0001-01-01T00:00:00",
+  "resources": {
+    "endpoints": [
+      {
+        "data": {
+          "ServerId": "413cc332-9910-417c-b5fe-76907c1f3c94",
+          "ServerName": "B87KLIc3vJVXCXx52i1O55bp59v8D2QTZq3AgOfFU6M30VlATW",
+          "CacheServerUrl": "https://artifactcache.actions.githubusercontent.com/B87KLIc3vJVXCXx52i1O55bp59v8D2QTZq3AgOfFU6M30VlATW/",
+          "FeedStreamUrl": "https://pipelines.actions.githubusercontent.com/B87KLIc3vJVXCXx52i1O55bp59v8D2QTZq3AgOfFU6M30VlATW/00000000-0000-0000-0000-000000000000/_apis/distributedtask/hubs/Actions/plans/cf52d5fd-88af-4f7a-87b8-9cfb84eb854c/timelines/cf52d5fd-88af-4f7a-87b8-9cfb84eb854c/records/ca395085-040a-526b-2ce8-bdc85f692774/feedstream?api-version=6.0-preview",
+          "ConnectivityChecks": "[\"https://acghubeus0.actions.githubusercontent.com/_apis/health\",\"https://actions-results-receiver-production.githubapp.com/health\"]"
+        },
+        "name": "SystemVssConnection",
+        "url": "https://pipelines.actions.githubusercontent.com/B87KLIc3vJVXCXx52i1O55bp59v8D2QTZq3AgOfFU6M30VlATW/",
+        "authorization": {
+          "parameters": {
+            "AccessToken": ***
+          },
+          "scheme": "OAuth"
+        },
+        "isShared": false,
+        "isReady": true
+      }
+    ]
+  },
+  "contextData": {
+    "github": {
+      "t": 2,
+      "d": [
+        {
+          "k": "ref",
+          "v": "refs/heads/main"
+        },
+        {
+          "k": "sha",
+          "v": "1ebb00f6d73a7be05dc86ef9fb8c80b0bef62ee6"
+        },
+        {
+          "k": "repository",
+          "v": "zhanxiaobo/test-action"
+        },
+        {
+          "k": "repository_owner",
+          "v": "zhanxiaobo"
+        },
+        {
+          "k": "repository_owner_id",
+          "v": "63626645"
+        },
+        {
+          "k": "repositoryUrl",
+          "v": "git://github.com/zhanxiaobo/test-action.git"
+        },
+        {
+          "k": "run_id",
+          "v": "6032018104"
+        },
+        {
+          "k": "run_number",
+          "v": "24"
+        },
+        {
+          "k": "retention_days",
+          "v": "90"
+        },
+        {
+          "k": "run_attempt",
+          "v": "1"
+        },
+        {
+          "k": "artifact_cache_size_limit",
+          "v": "10"
+        },
+        {
+          "k": "repository_visibility",
+          "v": "public"
+        },
+        {
+          "k": "repo-self-hosted-runners-disabled",
+          "v": false
+        },
+        {
+          "k": "enterprise-managed-business-id",
+          "v": ""
+        },
+        {
+          "k": "repository_id",
+          "v": "659635656"
+        },
+        {
+          "k": "actor_id",
+          "v": "63626645"
+        },
+        {
+          "k": "actor",
+          "v": "zhanxiaobo"
+        },
+        {
+          "k": "triggering_actor",
+          "v": "zhanxiaobo"
+        },
+        {
+          "k": "workflow",
+          "v": "Build and Deploy to ACK"
+        },
+        {
+          "k": "head_ref",
+          "v": ""
+        },
+        {
+          "k": "base_ref",
+          "v": ""
+        },
+        {
+          "k": "event_name",
+          "v": "push"
+        },
+        {
+          "k": "event",
+          "v": {
+            "t": 2,
+            "d": [
+              {
+                "k": "after",
+                "v": "1ebb00f6d73a7be05dc86ef9fb8c80b0bef62ee6"
+              },
+              {
+                "k": "base_ref",
+                "v": null
+              },
+              {
+                "k": "before",
+                "v": "18e5d4e8dcd764d17d821ea590708abdab82a75b"
+              },
+              {
+                "k": "commits",
+                "v": {
+                  "t": 1,
+                  "a": [
+                    {
+                      "t": 2,
+                      "d": [
+                        {
+                          "k": "author",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "1016072171@qq.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Nicholas boge"
+                              },
+                              {
+                                "k": "username",
+                                "v": "zhanxiaobo"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "committer",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "1016072171@qq.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Nicholas boge"
+                              },
+                              {
+                                "k": "username",
+                                "v": "zhanxiaobo"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "distinct",
+                          "v": true
+                        },
+                        {
+                          "k": "id",
+                          "v": "1ebb00f6d73a7be05dc86ef9fb8c80b0bef62ee6"
+                        },
+                        {
+                          "k": "message",
+                          "v": "test"
+                        },
+                        {
+                          "k": "timestamp",
+                          "v": "2023-08-31T09:38:11+08:00"
+                        },
+                        {
+                          "k": "tree_id",
+                          "v": "f200008cea7a6e09f750175750b77cf9d47b2d65"
+                        },
+                        {
+                          "k": "url",
+                          "v": "https://github.com/zhanxiaobo/test-action/commit/1ebb00f6d73a7be05dc86ef9fb8c80b0bef62ee6"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "compare",
+                "v": "https://github.com/zhanxiaobo/test-action/compare/18e5d4e8dcd7...1ebb00f6d73a"
+              },
+              {
+                "k": "created",
+                "v": false
+              },
+              {
+                "k": "deleted",
+                "v": false
+              },
+              {
+                "k": "forced",
+                "v": false
+              },
+              {
+                "k": "head_commit",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "author",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "1016072171@qq.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "Nicholas boge"
+                          },
+                          {
+                            "k": "username",
+                            "v": "zhanxiaobo"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "committer",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "1016072171@qq.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "Nicholas boge"
+                          },
+                          {
+                            "k": "username",
+                            "v": "zhanxiaobo"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "distinct",
+                      "v": true
+                    },
+                    {
+                      "k": "id",
+                      "v": "1ebb00f6d73a7be05dc86ef9fb8c80b0bef62ee6"
+                    },
+                    {
+                      "k": "message",
+                      "v": "test"
+                    },
+                    {
+                      "k": "timestamp",
+                      "v": "2023-08-31T09:38:11+08:00"
+                    },
+                    {
+                      "k": "tree_id",
+                      "v": "f200008cea7a6e09f750175750b77cf9d47b2d65"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://github.com/zhanxiaobo/test-action/commit/1ebb00f6d73a7be05dc86ef9fb8c80b0bef62ee6"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "pusher",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "email",
+                      "v": "63626645+zhanxiaobo@users.noreply.github.com"
+                    },
+                    {
+                      "k": "name",
+                      "v": "zhanxiaobo"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "ref",
+                "v": "refs/heads/main"
+              },
+              {
+                "k": "repository",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "allow_forking",
+                      "v": true
+                    },
+                    {
+                      "k": "archive_url",
+                      "v": "https://api.github.com/repos/zhanxiaobo/test-action/{archive_format}{/ref}"
+                    },
+                    {
+                      "k": "archived",
+                      "v": false
+                    },
+                    {
+                      "k": "assignees_url",
+                      "v": "https://api.github.com/repos/zhanxiaobo/test-action/assignees{/user}"
+                    },
+                    {
+                      "k": "blobs_url",
+                      "v": "https://api.github.com/repos/zhanxiaobo/test-action/git/blobs{/sha}"
+                    },
+                    {
+                      "k": "branches_url",
+                      "v": "https://api.github.com/repos/zhanxiaobo/test-action/branches{/branch}"
+                    },
+                    {
+                      "k": "clone_url",
+                      "v": "https://github.com/zhanxiaobo/test-action.git"
+                    },
+                    {
+                      "k": "collaborators_url",
+                      "v": "https://api.github.com/repos/zhanxiaobo/test-action/collaborators{/collaborator}"
+                    },
+                    {
+                      "k": "comments_url",
+                      "v": "https://api.github.com/repos/zhanxiaobo/test-action/comments{/number}"
+                    },
+                    {
+                      "k": "commits_url",
+                      "v": "https://api.github.com/repos/zhanxiaobo/test-action/commits{/sha}"
+                    },
+                    {
+                      "k": "compare_url",
+                      "v": "https://api.github.com/repos/zhanxiaobo/test-action/compare/{base}...{head}"
+                    },
+                    {
+                      "k": "contents_url",
+                      "v": "https://api.github.com/repos/zhanxiaobo/test-action/contents/{+path}"
+                    },
+                    {
+                      "k": "contributors_url",
+                      "v": "https://api.github.com/repos/zhanxiaobo/test-action/contributors"
+                    },
+                    {
+                      "k": "created_at",
+                      "v": 1687941662.0
+                    },
+                    {
+                      "k": "default_branch",
+                      "v": "main"
+                    },
+                    {
+                      "k": "deployments_url",
+                      "v": "https://api.github.com/repos/zhanxiaobo/test-action/deployments"
+                    },
+                    {
+                      "k": "description",
+                      "v": null
+                    },
+                    {
+                      "k": "disabled",
+                      "v": false
+                    },
+                    {
+                      "k": "downloads_url",
+                      "v": "https://api.github.com/repos/zhanxiaobo/test-action/downloads"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/repos/zhanxiaobo/test-action/events"
+                    },
+                    {
+                      "k": "fork",
+                      "v": false
+                    },
+                    {
+                      "k": "forks",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_url",
+                      "v": "https://api.github.com/repos/zhanxiaobo/test-action/forks"
+                    },
+                    {
+                      "k": "full_name",
+                      "v": "zhanxiaobo/test-action"
+                    },
+                    {
+                      "k": "git_commits_url",
+                      "v": "https://api.github.com/repos/zhanxiaobo/test-action/git/commits{/sha}"
+                    },
+                    {
+                      "k": "git_refs_url",
+                      "v": "https://api.github.com/repos/zhanxiaobo/test-action/git/refs{/sha}"
+                    },
+                    {
+                      "k": "git_tags_url",
+                      "v": "https://api.github.com/repos/zhanxiaobo/test-action/git/tags{/sha}"
+                    },
+                    {
+                      "k": "git_url",
+                      "v": "git://github.com/zhanxiaobo/test-action.git"
+                    },
+                    {
+                      "k": "has_discussions",
+                      "v": false
+                    },
+                    {
+                      "k": "has_downloads",
+                      "v": true
+                    },
+                    {
+                      "k": "has_issues",
+                      "v": true
+                    },
+                    {
+                      "k": "has_pages",
+                      "v": false
+                    },
+                    {
+                      "k": "has_projects",
+                      "v": true
+                    },
+                    {
+                      "k": "has_wiki",
+                      "v": true
+                    },
+                    {
+                      "k": "homepage",
+                      "v": null
+                    },
+                    {
+                      "k": "hooks_url",
+                      "v": "https://api.github.com/repos/zhanxiaobo/test-action/hooks"
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/zhanxiaobo/test-action"
+                    },
+                    {
+                      "k": "id",
+                      "v": 659635656.0
+                    },
+                    {
+                      "k": "is_template",
+                      "v": false
+                    },
+                    {
+                      "k": "issue_comment_url",
+                      "v": "https://api.github.com/repos/zhanxiaobo/test-action/issues/comments{/number}"
+                    },
+                    {
+                      "k": "issue_events_url",
+                      "v": "https://api.github.com/repos/zhanxiaobo/test-action/issues/events{/number}"
+                    },
+                    {
+                      "k": "issues_url",
+                      "v": "https://api.github.com/repos/zhanxiaobo/test-action/issues{/number}"
+                    },
+                    {
+                      "k": "keys_url",
+                      "v": "https://api.github.com/repos/zhanxiaobo/test-action/keys{/key_id}"
+                    },
+                    {
+                      "k": "labels_url",
+                      "v": "https://api.github.com/repos/zhanxiaobo/test-action/labels{/name}"
+                    },
+                    {
+                      "k": "language",
+                      "v": null
+                    },
+                    {
+                      "k": "languages_url",
+                      "v": "https://api.github.com/repos/zhanxiaobo/test-action/languages"
+                    },
+                    {
+                      "k": "license",
+                      "v": null
+                    },
+                    {
+                      "k": "master_branch",
+                      "v": "main"
+                    },
+                    {
+                      "k": "merges_url",
+                      "v": "https://api.github.com/repos/zhanxiaobo/test-action/merges"
+                    },
+                    {
+                      "k": "milestones_url",
+                      "v": "https://api.github.com/repos/zhanxiaobo/test-action/milestones{/number}"
+                    },
+                    {
+                      "k": "mirror_url",
+                      "v": null
+                    },
+                    {
+                      "k": "name",
+                      "v": "test-action"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "R_kgDOJ1E9yA"
+                    },
+                    {
+                      "k": "notifications_url",
+                      "v": "https://api.github.com/repos/zhanxiaobo/test-action/notifications{?since,all,participating}"
+                    },
+                    {
+                      "k": "open_issues",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "open_issues_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "owner",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "avatar_url",
+                            "v": "https://avatars.githubusercontent.com/u/63626645?v=4"
+                          },
+                          {
+                            "k": "email",
+                            "v": "63626645+zhanxiaobo@users.noreply.github.com"
+                          },
+                          {
+                            "k": "events_url",
+                            "v": "https://api.github.com/users/zhanxiaobo/events{/privacy}"
+                          },
+                          {
+                            "k": "followers_url",
+                            "v": "https://api.github.com/users/zhanxiaobo/followers"
+                          },
+                          {
+                            "k": "following_url",
+                            "v": "https://api.github.com/users/zhanxiaobo/following{/other_user}"
+                          },
+                          {
+                            "k": "gists_url",
+                            "v": "https://api.github.com/users/zhanxiaobo/gists{/gist_id}"
+                          },
+                          {
+                            "k": "gravatar_id",
+                            "v": ""
+                          },
+                          {
+                            "k": "html_url",
+                            "v": "https://github.com/zhanxiaobo"
+                          },
+                          {
+                            "k": "id",
+                            "v": 63626645.0
+                          },
+                          {
+                            "k": "login",
+                            "v": "zhanxiaobo"
+                          },
+                          {
+                            "k": "name",
+                            "v": "zhanxiaobo"
+                          },
+                          {
+                            "k": "node_id",
+                            "v": "MDQ6VXNlcjYzNjI2NjQ1"
+                          },
+                          {
+                            "k": "organizations_url",
+                            "v": "https://api.github.com/users/zhanxiaobo/orgs"
+                          },
+                          {
+                            "k": "received_events_url",
+                            "v": "https://api.github.com/users/zhanxiaobo/received_events"
+                          },
+                          {
+                            "k": "repos_url",
+                            "v": "https://api.github.com/users/zhanxiaobo/repos"
+                          },
+                          {
+                            "k": "site_admin",
+                            "v": false
+                          },
+                          {
+                            "k": "starred_url",
+                            "v": "https://api.github.com/users/zhanxiaobo/starred{/owner}{/repo}"
+                          },
+                          {
+                            "k": "subscriptions_url",
+                            "v": "https://api.github.com/users/zhanxiaobo/subscriptions"
+                          },
+                          {
+                            "k": "type",
+                            "v": "User"
+                          },
+                          {
+                            "k": "url",
+                            "v": "https://api.github.com/users/zhanxiaobo"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "private",
+                      "v": false
+                    },
+                    {
+                      "k": "pulls_url",
+                      "v": "https://api.github.com/repos/zhanxiaobo/test-action/pulls{/number}"
+                    },
+                    {
+                      "k": "pushed_at",
+                      "v": 1693445992.0
+                    },
+                    {
+                      "k": "releases_url",
+                      "v": "https://api.github.com/repos/zhanxiaobo/test-action/releases{/id}"
+                    },
+                    {
+                      "k": "size",
+                      "v": 78.0
+                    },
+                    {
+                      "k": "ssh_url",
+                      "v": "git@github.com:zhanxiaobo/test-action.git"
+                    },
+                    {
+                      "k": "stargazers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_url",
+                      "v": "https://api.github.com/repos/zhanxiaobo/test-action/stargazers"
+                    },
+                    {
+                      "k": "statuses_url",
+                      "v": "https://api.github.com/repos/zhanxiaobo/test-action/statuses/{sha}"
+                    },
+                    {
+                      "k": "subscribers_url",
+                      "v": "https://api.github.com/repos/zhanxiaobo/test-action/subscribers"
+                    },
+                    {
+                      "k": "subscription_url",
+                      "v": "https://api.github.com/repos/zhanxiaobo/test-action/subscription"
+                    },
+                    {
+                      "k": "svn_url",
+                      "v": "https://github.com/zhanxiaobo/test-action"
+                    },
+                    {
+                      "k": "tags_url",
+                      "v": "https://api.github.com/repos/zhanxiaobo/test-action/tags"
+                    },
+                    {
+                      "k": "teams_url",
+                      "v": "https://api.github.com/repos/zhanxiaobo/test-action/teams"
+                    },
+                    {
+                      "k": "topics",
+                      "v": {
+                        "t": 1
+                      }
+                    },
+                    {
+                      "k": "trees_url",
+                      "v": "https://api.github.com/repos/zhanxiaobo/test-action/git/trees{/sha}"
+                    },
+                    {
+                      "k": "updated_at",
+                      "v": "2023-06-28T08:41:03Z"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://github.com/zhanxiaobo/test-action"
+                    },
+                    {
+                      "k": "visibility",
+                      "v": "public"
+                    },
+                    {
+                      "k": "watchers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "watchers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "web_commit_signoff_required",
+                      "v": false
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "sender",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "avatar_url",
+                      "v": "https://avatars.githubusercontent.com/u/63626645?v=4"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/users/zhanxiaobo/events{/privacy}"
+                    },
+                    {
+                      "k": "followers_url",
+                      "v": "https://api.github.com/users/zhanxiaobo/followers"
+                    },
+                    {
+                      "k": "following_url",
+                      "v": "https://api.github.com/users/zhanxiaobo/following{/other_user}"
+                    },
+                    {
+                      "k": "gists_url",
+                      "v": "https://api.github.com/users/zhanxiaobo/gists{/gist_id}"
+                    },
+                    {
+                      "k": "gravatar_id",
+                      "v": ""
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/zhanxiaobo"
+                    },
+                    {
+                      "k": "id",
+                      "v": 63626645.0
+                    },
+                    {
+                      "k": "login",
+                      "v": "zhanxiaobo"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "MDQ6VXNlcjYzNjI2NjQ1"
+                    },
+                    {
+                      "k": "organizations_url",
+                      "v": "https://api.github.com/users/zhanxiaobo/orgs"
+                    },
+                    {
+                      "k": "received_events_url",
+                      "v": "https://api.github.com/users/zhanxiaobo/received_events"
+                    },
+                    {
+                      "k": "repos_url",
+                      "v": "https://api.github.com/users/zhanxiaobo/repos"
+                    },
+                    {
+                      "k": "site_admin",
+                      "v": false
+                    },
+                    {
+                      "k": "starred_url",
+                      "v": "https://api.github.com/users/zhanxiaobo/starred{/owner}{/repo}"
+                    },
+                    {
+                      "k": "subscriptions_url",
+                      "v": "https://api.github.com/users/zhanxiaobo/subscriptions"
+                    },
+                    {
+                      "k": "type",
+                      "v": "User"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/users/zhanxiaobo"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "k": "server_url",
+          "v": "https://github.com"
+        },
+        {
+          "k": "api_url",
+          "v": "https://api.github.com"
+        },
+        {
+          "k": "graphql_url",
+          "v": "https://api.github.com/graphql"
+        },
+        {
+          "k": "ref_name",
+          "v": "main"
+        },
+        {
+          "k": "ref_protected",
+          "v": false
+        },
+        {
+          "k": "ref_type",
+          "v": "branch"
+        },
+        {
+          "k": "secret_source",
+          "v": "Actions"
+        },
+        {
+          "k": "workflow_ref",
+          "v": "zhanxiaobo/test-action/.github/workflows/main.yml@refs/heads/main"
+        },
+        {
+          "k": "workflow_sha",
+          "v": "1ebb00f6d73a7be05dc86ef9fb8c80b0bef62ee6"
+        }
+      ]
+    },
+    "run-feature-flags": {
+      "t": 2,
+      "d": [
+        {
+          "k": "actions_stream_logs_via_results_service",
+          "v": false
+        },
+        {
+          "k": "actions_use_results_service",
+          "v": true
+        }
+      ]
+    },
+    "partialrerun": false,
+    "needs": {
+      "t": 2
+    },
+    "vars": null,
+    "inputs": {
+      "t": 2
+    },
+    "matrix": null,
+    "strategy": {
+      "t": 2,
+      "d": [
+        {
+          "k": "fail-fast",
+          "v": true
+        },
+        {
+          "k": "job-index",
+          "v": 0.0
+        },
+        {
+          "k": "job-total",
+          "v": 1.0
+        },
+        {
+          "k": "max-parallel",
+          "v": 1.0
+        }
+      ]
+    }
+  },
+  "actionsEnvironment": {
+    "name": "production",
+    "url": null
+  }
+}
