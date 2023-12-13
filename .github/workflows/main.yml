@@ -20,3 +20,4 @@ jobs:
           echo "./${{ env.AZURE_FUNCTIONAPP_NAME }}"
           echo 'hello world'
           echo 'hello world'
+          echo
