@@ -1,6 +1,8 @@
 name: learn-github-actions
 run-name: test-actions
 on: [push]
+env:
+  AZURE_FUNCTIONAPP_NAME: 'your-app-name'
 jobs:
   check-bats-version:
     runs-on: self-hosted
@@ -15,6 +17,6 @@ jobs:
         shell: bash
         run: |
           echo 'hello world'
-          echo 'hello world'
+          echo './${{ env.AZURE_FUNCTIONAPP_NAME }}'
           echo 'hello world'
           echo 'hello world'
