@@ -16,7 +16,7 @@ jobs:
       - name: 'Test Shell Run'
         shell: bash
         run: |
-          echo 'hello world'
-          echo './${{ env.AZURE_FUNCTIONAPP_NAME }}'
+          echo "hello world"
+          echo "./${{ env.AZURE_FUNCTIONAPP_NAME }}"
           echo 'hello world'
           echo 'hello world'
